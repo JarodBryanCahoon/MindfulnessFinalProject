@@ -1,0 +1,42 @@
+[
+  {
+    "subject" : "Physiological Changes During Meditation",
+    "reference" : "http://science.sciencemag.org/content/167/3926/1751",
+    "citation" : "Wallace, R. K. (1970). Physiological effects of transcendental meditation. Science, 167(3926), 1751-1754."
+  },
+  {
+    "subject" : "Gray Matter",
+    "reference" : "https://www.ncbi.nlm.nih.gov/pubmed/19280691",
+    "citation" : "Luders, E., Toga, A. W., Lepore, N., & Gaser, C. (2009). The underlying anatomical correlates of long-term meditation: Larger hippocampal and frontal volumes of gray matter. NeuroImage, 45(3), 672–678."
+  },
+  {
+    "subject" : "Lower Back Pain",
+    "reference" : "https://www.ncbi.nlm.nih.gov/pubmed/27002445",
+    "citation" : "Cherkin, D. C., Sherman, K. J., Balderson, B. H., Cook, A. J., Anderson, M. L., Hawkes, R. J., … Turner, J. A. (2016). Effects of Mindfulness-Based Stress Reduction vs Cognitive-Behavioral Therapy and Usual Care on Back Pain and Functional Limitations among Adults with Chronic Low Back Pain: A Randomized Clinical Trial. JAMA, 315(12), 1240–1249. http://doi.org/10.1001/jama.2016.2323"
+  },
+  {
+    "subject" : "Cortical Gyrification",
+    "reference" : "https://www.ncbi.nlm.nih.gov/pubmed/22393318",
+    "citation" : "Luders, E., Kurth, F., Mayer, E. A., Toga, A. W., Narr, K. L., & Gaser, C. (2012). The Unique Brain Anatomy of Meditation Practitioners: Alterations in Cortical Gyrification. Frontiers in Human Neuroscience, 6, 34. http://doi.org/10.3389/fnhum.2012.00034"
+  },
+  {
+    "subject" : "Neurogenic Inflammation",
+    "reference" : "https://www.ncbi.nlm.nih.gov/pubmed/23092711",
+    "citation" : "Rosenkranz, M. A., Davidson, R. J., MacCoon, D. G., Sheridan, J. F., Kalin, N. H., & Lutz, A. (2013). A comparison of mindfulness-based stress reduction and an active control in modulation of neurogenic inflammation. Brain, Behavior, and Immunity, 27C, 174–184. http://doi.org/10.1016/j.bbi.2012.10.013"
+  },
+  {
+    "subject" : "Methodology of Pain Relief in Meditation",
+    "reference" : "https://www.ncbi.nlm.nih.gov/pubmed/26985045",
+    "citation" : "Zeidan, F., Adler-Neal, A. L., Wells, R. E., Stagnaro, E., May, L. M., Eisenach, J. C., … Coghill, R. C. (2016). Mindfulness-Meditation-Based Pain Relief Is Not Mediated by Endogenous Opioids. The Journal of Neuroscience, 36(11), 3391–3397. http://doi.org/10.1523/JNEUROSCI.4328-15.2016"
+  },
+  {
+    "subject" : "Meditation Research Review",
+    "reference" : "http://noetic.org/sites/default/files/uploads/files/Meditation_Intro.pdf",
+    "citation" : "Murphy, M., Donovan, S., & Taylor, E. (1997). The physical and psychological effects of meditation: A review of contemporary research. Institute of Noetic Sciences: Petaluma."
+  },
+  {
+    "subject" : "Physiological Responses to Meditation",
+    "reference" : "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.2044-8260.1979.tb00330.x",
+    "citation" : "West, M. A. (1979). Physiological effects of meditation: A longitudinal study. British                   Journal of Clinical Psychology, 18(2), 219-226."
+  }
+]
