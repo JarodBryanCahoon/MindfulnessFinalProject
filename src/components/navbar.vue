@@ -1,21 +1,11 @@
 <template>
     <div>
         <v-toolbar>
-            <v-menu>
-                <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
-                <v-list>
-                    <v-btn>
-                        About
-                    </v-btn>
-                    <v-btn>
-                        Gallery
-                    </v-btn>
-                    <v-btn>
-                        Bibliography
-                    </v-btn>
-                </v-list>
-            </v-menu>
             <v-toolbar-title>A Mindful Gallery</v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-btn v-on:click.native="changePage('Gallery')">Gallery</v-btn>
+            <v-btn v-on:click.native="changePage('About')">About</v-btn>
+            <v-btn v-on:click.native="changePage('Biblio')">Bibliography</v-btn>
         </v-toolbar>
     </div>
 </template>
@@ -26,6 +16,10 @@
             return {
                 currentSite : null,
             }
-        }
+        },
+
+        props : [
+            'changePage'
+        ]
     }
 </script>

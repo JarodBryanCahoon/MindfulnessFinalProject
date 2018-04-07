@@ -1,22 +1,22 @@
 <template>
   <div>
-    <NavBar></NavBar>
-    <Gallery v-if="this.currentSite == Gallery"></Gallery>
-    <Biblio v-if="this.currentSite == Biblio"></Biblio>
-    <About v-if="this.currentSite == About"></About>
+    <NavBar :changePage=changeSite></NavBar>
+    <Gallery v-if="this.checkCurrentSite('Gallery')"></Gallery>
+    <Biblio v-if="this.checkCurrentSite('Biblio')"></Biblio>
+    <About v-if="this.checkCurrentSite('About')"></About>
   </div>
 </template>
 
 <script>
-    import NavBar from '../components/navbar'
-    import Gallery from '../components/gallery'
-    import Biblio from '../components/bibliography'
-    import About from '../components/about'
+    import NavBar from './components/navbar.vue'
+    import Gallery from './components/gallery.vue'
+    import Biblio from './components/bibliography.vue'
+    import About from './components/about.vue'
 
     export default {
         data () {
             return {
-                currentSite : About,
+                currentSite : 'About',
             }
         },
 
@@ -28,7 +28,13 @@
         },
 
         methods : {
+            changeSite(String){
+                this.currentSite = String;
+            },
 
+            checkCurrentSite(site){
+                return this.currentSite == site;
+            }
         }
     }
 </script>
