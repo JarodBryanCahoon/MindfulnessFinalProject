@@ -7,6 +7,7 @@
             <v-btn v-on:click.native="changePage('About')">About</v-btn>
             <v-btn v-on:click.native="changePage('Biblio')">Bibliography</v-btn>
         </v-toolbar>
+        <v-spacer></v-spacer>
     </div>
 </template>
 
