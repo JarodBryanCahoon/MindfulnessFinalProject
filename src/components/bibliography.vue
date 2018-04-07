@@ -3,7 +3,7 @@
         <v-container fluid grid-list-lg>
             <v-layout row wrap>
                 <v-flex row-wrap xs4 v-for="cit in citationList">
-                    <v-card height = "100%">
+                    <v-card height="100%" dark>
                         <v-card-title>
                             {{cit.subject}}
                         </v-card-title>

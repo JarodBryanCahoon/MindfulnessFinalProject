@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-toolbar>
+        <v-toolbar color="#616161">
             <v-toolbar-title>A Mindful Gallery</v-toolbar-title>
             <v-spacer></v-spacer>
             <v-btn v-on:click.native="changePage('Gallery')">Gallery</v-btn>
