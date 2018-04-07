@@ -1,9 +1,7 @@
 <template>
-    <div>
-        <h1>
-            Gallery
-        </h1>
-    </div>
+       <v-parallax src="src/images/mountains.jpg" height="800">
+
+       </v-parallax>
 </template>
 
 <script>
