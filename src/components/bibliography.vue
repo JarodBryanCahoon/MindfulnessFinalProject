@@ -1,5 +1,5 @@
 <template>
-    <v-parallax src="src/images/gap.jpg" height="2000">
+    <v-parallax src="src/images/gap.jpg" height="100%">
         <v-container fluid grid-list-lg>
             <v-layout row wrap>
                 <v-flex row-wrap xs4 v-for="cit in citationList">
