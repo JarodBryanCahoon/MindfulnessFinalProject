@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavBar :changePage=changeSite></NavBar>
-    <Gallery v-if="this.checkCurrentSite('Gallery')"></Gallery>
+    <Gallery v-if="this.checkCurrentSite('Gallery')" :getHeight=giveHeight></Gallery>
     <Biblio v-if="this.checkCurrentSite('Biblio')"></Biblio>
     <About v-if="this.checkCurrentSite('About')"></About>
   </div>
@@ -34,6 +34,10 @@
 
             checkCurrentSite(site){
                 return this.currentSite == site;
+            },
+
+            giveHeight(image){
+                return image.naturalHeight;
             }
         }
     }

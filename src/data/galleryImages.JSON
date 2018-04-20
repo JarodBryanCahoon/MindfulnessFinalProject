@@ -2,9 +2,10 @@
   {
     "Opened" : false,
     "Title" : "Heck yeah",
-    "ImagePath" : "src/data/pictures/ducky.jpg",
-    "Description" : {
-
-    }
-  },
+    "img": "src/images/ducky.jpg",
+    "descriptions" : [
+      "Blahblahblahblah",
+      "bluhbluhbluh"
+    ]
+  }
 ]

@@ -6,15 +6,19 @@
                                    <v-card height="100%" color="grey">
                                           <v-dialog v-model="image.Opened">
                                                  <v-card color="grey">
-                                                        <v-card-title primary-title>Example</v-card-title>
-                                                        <img src="src/images/ducky.jpg" height="33%" width="33%">
-                                                        <v-card-text>Hello, this is an example of what I will be trying to do</v-card-text>
-                                                        <v-card-text>More stuff will be going in here but it is kind of a good start</v-card-text>
-                                                        <p><a href="www.google.com">Source</a></p>
+                                                        <v-card-title class="titles" primary-title>{{image.Title}}</v-card-title>
+                                                        <v-card-media
+                                                                :src=image.img
+                                                                contain
+                                                                height="500"
+                                                        ></v-card-media>
+                                                        <v-flex>
+                                                               <p class="paragraphs" v-for="text in image.descriptions">{{text}}</p>
+                                                        </v-flex>
                                                  </v-card>
                                           </v-dialog>
                                           <v-layout row>
-                                                 <v-card-title>
+                                                 <v-card-title class="titles">
                                                         {{image.Title}}
                                                  </v-card-title>
                                                  <v-spacer></v-spacer>
@@ -55,3 +59,13 @@
         ]
     }
 </script>
+
+<style scoped>
+       .titles{
+              font-size: 2.5em;
+       }
+
+       .paragraphs{
+              font-size: 1.3em;
+       }
+</style>
