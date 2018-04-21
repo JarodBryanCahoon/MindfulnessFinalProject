@@ -1,11 +1,74 @@
 [
   {
     "Opened" : false,
-    "Title" : "Heck yeah",
-    "img": "src/images/ducky.jpg",
+    "Title" : "Reduces Oxygen Consumption",
+    "img": "src/images/underwater.jpg",
     "descriptions" : [
-      "Blahblahblahblah",
-      "bluhbluhbluh"
+      "Vipassana meditation practices commonly focus on a person becoming more aware of their physical self, which most of the time comes through the breath. The breath is used as a tool by which one can calm and center themselves, resulting with them becoming more in tune with their bodies. Studies show that there are tangible physiological differences that occur when one is in a meditative state, including a reduction in the amount of oxygen the body consumes while meditating.",
+      "I chose this image, of what appears to be a woman meditating underwater, largely because I think it represents a moment in which we are most in tune with the breath in our own bodies. While underwater, we are much more cognizant of how deep our previous breath was, how much oxygen we use, and overall much more appreciative of the breath itself."
+    ]
+  },
+  {
+    "Opened" : false,
+    "Title" : "Increases Gray Matter Volume",
+    "img": "src/images/graymatter.jpg",
+    "descriptions" : [
+      "A study in the neuroimaging journal, Neuroimage, suggests that there are physical brain differences in those who are long term meditators, compared to those who are not. One of these differences is an increase in volume of gray matter in the in the right orbito-frontal cortex, in addition to increases of gray matter in the right hippocampus. Gray matter contains the majority of the brains neuronal cells, and includes regions of the brain involved with muscle control and sensory perception, among other things",
+      "I chose this image to represent this topic precisely because it is a imaging scan of the topic -- the gray matter itself. It is both beautiful and bewildering that we can view something which essentially constitutes what the “we” is, which is a reason why I find an image of a brain to be particularly compelling. Additionally, this image clearly contrasts the gray matter of the brain with the other parts of the brain"
+    ]
+  },
+  {
+    "Opened" : false,
+    "Title" : "Decreases Lower Back Pain",
+    "img": "src/images/skeleton.jpg",
+    "descriptions" : [
+      "A study was published in the Journal of the American Medical Association, showing that a regimen of MSBR (Mindfulness Based Stress Relief) was effective in reducing lower back pain in young to middle aged adults, when compared to CBT (Cognitive Based Therapy), and usual care. After 26 weeks, participants who were in the MSBR or CBT regimens reported greater improvement in back bain and movement, as opposed to those who just received normal care. Additionally, lower back injuries are incredibly common, especially in the elderly, and those who work in labor intensive jobs.",
+      "The image included is of a skeleton whose lower back (lumbar spine) is highlighted with a red circle. From this view, you can see how much of your body is supported by this part of your back, and could therefore imagine how painful it could be to injure."
+    ]
+  },
+  {
+    "Opened" : false,
+    "Title" : "Increases Cortical Gyrification",
+    "img": "src/images/gyrification.jpg",
+    "descriptions" : [
+      "A study published in the journal “Front Hum Neurosci” examined the brains of those who were long term meditators, and compared them to the brains of those who were not. While most studies of this kind examined gray matter volume or cortical size, this study instead opted to measure the amount of cortical gyrification present in the brain. Gyrification describes the pattern and level to which the brain’s surface is folded. The study found that long term meditators had significantly more gyrification within the left precentral gyrus, right fusiform gyrus, right cuneus, as well as left and right anterior dorsal insula, which may suggest aspects of brain physiology which corresponds to meditative skills.",
+      "I chose this image because it allows you to see the various levels of gyrification between several different brains (both human and animal). It is very visually convincing to see the difference in gyrification between the brain of a full grown human, and the brain of a developing human, which makes it easy to imagine how an increase in gyrification can lead to a difference in intelligence."
+    ]
+  },
+  {
+    "Opened" : false,
+    "Title" : "Reduces Neuroinflammation",
+    "img": "src/images/inflammation.jpg",
+    "descriptions" : [
+      "A study published in the Neuroimmunology journal, Brain Behav Immun, reports that MBSR (Mindfulness Based Stress Reduction) may reduce the inflammatory response produced by stress, when compared to a “well matched control intervention”, HEP (Health Enhancement Program). Random groups were chosen for each of the two treatments, and capsaicin cream was put on the participants’ forearms. Endocrine measures of stress were taken before and after the treatment was applied. MBSR and HEP groups showed comparable levels of stress-based cortisol post treatment, but the MBSR group showed lower levels of post-stress inflammatory response.",
+      "I chose this picture, because it gives some visual representation of the Neuroinflammation response, which is otherwise hard to think about or visualize. The red dots are stress induced APP fragments."
+    ]
+  },
+  {
+    "Opened" : false,
+    "Title" : "Non-Opioid Pain Reduction",
+    "img": "src/images/pills.jpg",
+    "descriptions" : [
+      "A study published in the Journal of Neuroscience finds that the pain reduction provided by mindfulness and meditation related therapies may not be a result of endogenous opioids. As the name suggests, endogenous opioids are opioids which are produced by the body in response to extreme physical discomfort or pain. This can be disadvantageous, however, since these opioids can actually interact with other medications that the patient may be taking. The study discusses possible other physiological pathways that mindfulness may employ when mediating pain.",
+      "I chose this picture because it represents an alternative that mindfulness based practices can hope to replace. Prescription drug use is at an all time high (both in terms of consumption and overdoses), and the ability to lessen it in any way would be an incredibly useful tool to potentially increase public health."
+    ]
+  },
+  {
+    "Opened" : false,
+    "Title" : "Increases Levels of Relaxation",
+    "img": "src/images/beach.jpg",
+    "descriptions" : [
+      "A 6 month long study in the British Journal of Clinical Psychology outlined the differences in several key measurements of relaxation between a group who practiced meditation, and a group who did not. The experimental group had its skin conductance measured pre-, during- and post- meditation, and compared to a control group. The experimental group showed continually lower levels of spontaneous skin conductance throughout the six months, while the control group showed relatively no change. In addition, the experimental group showed overall lower skin conductance, suggesting the production of physiological relaxation, even when while not actively meditating. ",
+      "For myself, the beach is the most relaxing place that I can imagine. The sound of the waves gently lapping the shore, combined with the sun gently shining down on the sand puts me in a place of deep peace and relaxation."
+    ]
+  },
+  {
+    "Opened" : false,
+    "Title" : "Reduced Oxygen Consumption While Meditating",
+    "img": "src/images/underwater.jpg",
+    "descriptions" : [
+      "Vipassana meditation practices commonly focus on a person becoming more aware of their physical self, which most of the time comes through the breath. The breath is used as a tool by which one can calm and center themselves, resulting with them becoming more in tune with their bodies. Studies show that there are tangible physiological differences that occur when one is in a meditative state, including a difference in the body’s oxygen consumption. ",
+      "I chose this image, of what appears to be a woman meditating underwater, largely because I think it represents a moment in which we are most in tune with the breath in our own bodies. While underwater, we are much more cognizant of how deep our previous breath was, how much oxygen we use, and overall much more appreciative of the breath itself."
     ]
   }
 ]

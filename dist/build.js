@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 11);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -176,166 +176,6 @@ module.exports = function normalizeComponent (
 /* 1 */
 /***/ (function(module, exports) {
 
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
-} catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_navbar_vue__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_gallery_vue__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_bibliography_vue__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_about_vue__ = __webpack_require__(26);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-    data: function data() {
-        return {
-            currentSite: 'About'
-        };
-    },
-
-
-    components: {
-        NavBar: __WEBPACK_IMPORTED_MODULE_0__components_navbar_vue__["a" /* default */],
-        Gallery: __WEBPACK_IMPORTED_MODULE_1__components_gallery_vue__["default"],
-        Biblio: __WEBPACK_IMPORTED_MODULE_2__components_bibliography_vue__["a" /* default */],
-        About: __WEBPACK_IMPORTED_MODULE_3__components_about_vue__["default"]
-    },
-
-    methods: {
-        changeSite: function changeSite(String) {
-            this.currentSite = String;
-        },
-        checkCurrentSite: function checkCurrentSite(site) {
-            return this.currentSite == site;
-        }
-    }
-});
-
-/***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-    data: function data() {
-        return {
-            currentSite: null
-        };
-    },
-
-
-    props: ['changePage']
-});
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports) {
-
-//
-//
-//
-//
-//
-//
-
-/***/ }),
-/* 5 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_citations_JSON__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_citations_JSON___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__data_citations_JSON__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuetify_src_components_VParallax_VParallax__ = __webpack_require__(21);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-    components: { VParallax: __WEBPACK_IMPORTED_MODULE_1_vuetify_src_components_VParallax_VParallax__["a" /* default */] },
-    data: function data() {
-        return {
-            citationList: __WEBPACK_IMPORTED_MODULE_0__data_citations_JSON___default.a
-        };
-    }
-});
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports) {
-
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
 	Author Tobias Koppers @sokra
@@ -415,7 +255,539 @@ function toComment(sourceMap) {
 
 
 /***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_navbar_vue__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_gallery_vue__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_bibliography_vue__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_about_vue__ = __webpack_require__(32);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    data: function data() {
+        return {
+            currentSite: 'About'
+        };
+    },
+
+
+    components: {
+        NavBar: __WEBPACK_IMPORTED_MODULE_0__components_navbar_vue__["a" /* default */],
+        Gallery: __WEBPACK_IMPORTED_MODULE_1__components_gallery_vue__["a" /* default */],
+        Biblio: __WEBPACK_IMPORTED_MODULE_2__components_bibliography_vue__["a" /* default */],
+        About: __WEBPACK_IMPORTED_MODULE_3__components_about_vue__["a" /* default */]
+    },
+
+    methods: {
+        changeSite: function changeSite(String) {
+            this.currentSite = String;
+        },
+        checkCurrentSite: function checkCurrentSite(site) {
+            return this.currentSite == site;
+        },
+        giveHeight: function giveHeight(image) {
+            return image.naturalHeight;
+        }
+    }
+});
+
+/***/ }),
+/* 4 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    data: function data() {
+        return {
+            currentSite: null
+        };
+    },
+
+
+    props: ['changePage']
+});
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+  Modified by Evan You @yyx990803
+*/
+
+var hasDocument = typeof document !== 'undefined'
+
+if (typeof DEBUG !== 'undefined' && DEBUG) {
+  if (!hasDocument) {
+    throw new Error(
+    'vue-style-loader cannot be used in a non-browser environment. ' +
+    "Use { target: 'node' } in your Webpack config to indicate a server-rendering environment."
+  ) }
+}
+
+var listToStyles = __webpack_require__(22)
+
+/*
+type StyleObject = {
+  id: number;
+  parts: Array<StyleObjectPart>
+}
+
+type StyleObjectPart = {
+  css: string;
+  media: string;
+  sourceMap: ?string
+}
+*/
+
+var stylesInDom = {/*
+  [id: number]: {
+    id: number,
+    refs: number,
+    parts: Array<(obj?: StyleObjectPart) => void>
+  }
+*/}
+
+var head = hasDocument && (document.head || document.getElementsByTagName('head')[0])
+var singletonElement = null
+var singletonCounter = 0
+var isProduction = false
+var noop = function () {}
+var options = null
+var ssrIdKey = 'data-vue-ssr-id'
+
+// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+// tags it will allow on a page
+var isOldIE = typeof navigator !== 'undefined' && /msie [6-9]\b/.test(navigator.userAgent.toLowerCase())
+
+module.exports = function (parentId, list, _isProduction, _options) {
+  isProduction = _isProduction
+
+  options = _options || {}
+
+  var styles = listToStyles(parentId, list)
+  addStylesToDom(styles)
+
+  return function update (newList) {
+    var mayRemove = []
+    for (var i = 0; i < styles.length; i++) {
+      var item = styles[i]
+      var domStyle = stylesInDom[item.id]
+      domStyle.refs--
+      mayRemove.push(domStyle)
+    }
+    if (newList) {
+      styles = listToStyles(parentId, newList)
+      addStylesToDom(styles)
+    } else {
+      styles = []
+    }
+    for (var i = 0; i < mayRemove.length; i++) {
+      var domStyle = mayRemove[i]
+      if (domStyle.refs === 0) {
+        for (var j = 0; j < domStyle.parts.length; j++) {
+          domStyle.parts[j]()
+        }
+        delete stylesInDom[domStyle.id]
+      }
+    }
+  }
+}
+
+function addStylesToDom (styles /* Array<StyleObject> */) {
+  for (var i = 0; i < styles.length; i++) {
+    var item = styles[i]
+    var domStyle = stylesInDom[item.id]
+    if (domStyle) {
+      domStyle.refs++
+      for (var j = 0; j < domStyle.parts.length; j++) {
+        domStyle.parts[j](item.parts[j])
+      }
+      for (; j < item.parts.length; j++) {
+        domStyle.parts.push(addStyle(item.parts[j]))
+      }
+      if (domStyle.parts.length > item.parts.length) {
+        domStyle.parts.length = item.parts.length
+      }
+    } else {
+      var parts = []
+      for (var j = 0; j < item.parts.length; j++) {
+        parts.push(addStyle(item.parts[j]))
+      }
+      stylesInDom[item.id] = { id: item.id, refs: 1, parts: parts }
+    }
+  }
+}
+
+function createStyleElement () {
+  var styleElement = document.createElement('style')
+  styleElement.type = 'text/css'
+  head.appendChild(styleElement)
+  return styleElement
+}
+
+function addStyle (obj /* StyleObjectPart */) {
+  var update, remove
+  var styleElement = document.querySelector('style[' + ssrIdKey + '~="' + obj.id + '"]')
+
+  if (styleElement) {
+    if (isProduction) {
+      // has SSR styles and in production mode.
+      // simply do nothing.
+      return noop
+    } else {
+      // has SSR styles but in dev mode.
+      // for some reason Chrome can't handle source map in server-rendered
+      // style tags - source maps in <style> only works if the style tag is
+      // created and inserted dynamically. So we remove the server rendered
+      // styles and inject new ones.
+      styleElement.parentNode.removeChild(styleElement)
+    }
+  }
+
+  if (isOldIE) {
+    // use singleton mode for IE9.
+    var styleIndex = singletonCounter++
+    styleElement = singletonElement || (singletonElement = createStyleElement())
+    update = applyToSingletonTag.bind(null, styleElement, styleIndex, false)
+    remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true)
+  } else {
+    // use multi-style-tag mode in all other cases
+    styleElement = createStyleElement()
+    update = applyToTag.bind(null, styleElement)
+    remove = function () {
+      styleElement.parentNode.removeChild(styleElement)
+    }
+  }
+
+  update(obj)
+
+  return function updateStyle (newObj /* StyleObjectPart */) {
+    if (newObj) {
+      if (newObj.css === obj.css &&
+          newObj.media === obj.media &&
+          newObj.sourceMap === obj.sourceMap) {
+        return
+      }
+      update(obj = newObj)
+    } else {
+      remove()
+    }
+  }
+}
+
+var replaceText = (function () {
+  var textStore = []
+
+  return function (index, replacement) {
+    textStore[index] = replacement
+    return textStore.filter(Boolean).join('\n')
+  }
+})()
+
+function applyToSingletonTag (styleElement, index, remove, obj) {
+  var css = remove ? '' : obj.css
+
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = replaceText(index, css)
+  } else {
+    var cssNode = document.createTextNode(css)
+    var childNodes = styleElement.childNodes
+    if (childNodes[index]) styleElement.removeChild(childNodes[index])
+    if (childNodes.length) {
+      styleElement.insertBefore(cssNode, childNodes[index])
+    } else {
+      styleElement.appendChild(cssNode)
+    }
+  }
+}
+
+function applyToTag (styleElement, obj) {
+  var css = obj.css
+  var media = obj.media
+  var sourceMap = obj.sourceMap
+
+  if (media) {
+    styleElement.setAttribute('media', media)
+  }
+  if (options.ssrId) {
+    styleElement.setAttribute(ssrIdKey, obj.id)
+  }
+
+  if (sourceMap) {
+    // https://developer.chrome.com/devtools/docs/javascript-debugging
+    // this makes source maps inside style tags work properly in Chrome
+    css += '\n/*# sourceURL=' + sourceMap.sources[0] + ' */'
+    // http://stackoverflow.com/a/26603875
+    css += '\n/*# sourceMappingURL=data:application/json;base64,' + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + ' */'
+  }
+
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = css
+  } else {
+    while (styleElement.firstChild) {
+      styleElement.removeChild(styleElement.firstChild)
+    }
+    styleElement.appendChild(document.createTextNode(css))
+  }
+}
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_galleryImages_JSON__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_galleryImages_JSON___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__data_galleryImages_JSON__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuetify_src_components_VCard_VCardMedia__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetify_src_components_VParallax_VParallax__ = __webpack_require__(7);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    components: {
+        VCardMedia: __WEBPACK_IMPORTED_MODULE_1_vuetify_src_components_VCard_VCardMedia__["a" /* default */]
+    },
+    data: function data() {
+        return {
+            galleryElements: __WEBPACK_IMPORTED_MODULE_0__data_galleryImages_JSON___default.a
+        };
+    },
+
+
+    props: ['getHeight'],
+
+    methods: {
+        tabify: function tabify(text) {
+            return "&nbsp&nbsp&nbsp&nbsp" + text;
+        }
+    }
+
+});
+
+/***/ }),
 /* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stylus_components_parallax_styl__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stylus_components_parallax_styl___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__stylus_components_parallax_styl__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_translatable__ = __webpack_require__(27);
+
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+  name: 'v-parallax',
+
+  mixins: [__WEBPACK_IMPORTED_MODULE_1__mixins_translatable__["a" /* default */]],
+
+  data () {
+    return {
+      isBooted: false
+    }
+  },
+
+  props: {
+    alt: String,
+    height: {
+      type: [String, Number],
+      default: 500
+    },
+    src: String
+  },
+
+  computed: {
+    styles () {
+      return {
+        display: 'block',
+        opacity: this.isBooted ? 1 : 0,
+        transform: `translate(-50%, ${this.parallax}px)`
+      }
+    }
+  },
+
+  watch: {
+    parallax () {
+      this.isBooted = true
+    }
+  },
+
+  mounted () {
+    this.init()
+  },
+
+  methods: {
+    init () {
+      if (!this.$refs.img) return
+
+      if (this.$refs.img.complete) {
+        this.translate()
+        this.listeners()
+      } else {
+        this.$refs.img.addEventListener('load', () => {
+          this.translate()
+          this.listeners()
+        }, false)
+      }
+    },
+    objHeight () {
+      return this.$refs.img.naturalHeight
+    },
+    elOffsetTop () {
+      return this.$el.offsetTop
+    }
+  },
+
+  render (h) {
+    const imgData = {
+      staticClass: 'parallax__image',
+      style: this.styles,
+      attrs: {
+        src: this.src
+      },
+      ref: 'img'
+    }
+
+    if (this.alt) imgData.attrs.alt = this.alt
+
+    const container = h('div', {
+      staticClass: 'parallax__image-container'
+    }, [
+      h('img', imgData)
+    ])
+
+    const content = h('div', {
+      staticClass: 'parallax__content'
+    }, this.$slots.default)
+
+    return h('div', {
+      staticClass: 'parallax',
+      style: {
+        height: `${this.normalizedHeight}px`
+      },
+      on: this.$listeners
+    }, [container, content])
+  }
+});
+
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports) {
 
 /*
@@ -667,47 +1039,94 @@ function updateLink(linkElement, obj) {
 
 
 /***/ }),
-/* 8 */
-/***/ (function(module, exports) {
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/***/ }),
 /* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_citations_JSON__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_citations_JSON___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__data_citations_JSON__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuetify_src_components_VParallax_VParallax__ = __webpack_require__(7);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    components: { VParallax: __WEBPACK_IMPORTED_MODULE_1_vuetify_src_components_VParallax_VParallax__["a" /* default */] },
+    data: function data() {
+        return {
+            citationList: __WEBPACK_IMPORTED_MODULE_0__data_citations_JSON___default.a
+        };
+    }
+});
+
+/***/ }),
+/* 10 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_about_json__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_about_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__data_about_json__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    data: function data() {
+        return {
+            aboutElements: __WEBPACK_IMPORTED_MODULE_0__data_about_json___default.a
+        };
+    }
+});
+
+/***/ }),
+/* 11 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetify__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetify__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vuetify__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vuetify_dist_vuetify_css__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vuetify_dist_vuetify_css__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_vuetify_dist_vuetify_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_vuetify_dist_vuetify_css__);
 
 
@@ -724,7 +1143,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
 });
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11660,10 +12079,10 @@ Vue.compile = compileToFunctions;
 
 /* harmony default export */ __webpack_exports__["a"] = (Vue);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1), __webpack_require__(11).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2), __webpack_require__(13).setImmediate))
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var apply = Function.prototype.apply;
@@ -11716,7 +12135,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(12);
+__webpack_require__(14);
 // On some exotic environments, it's not clear which object `setimmeidate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -11727,10 +12146,10 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
                          (typeof global !== "undefined" && global.clearImmediate) ||
                          (this && this.clearImmediate);
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 12 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -11920,10 +12339,10 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(13)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(15)))
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -12113,13 +12532,13 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(3);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_8d12aae6_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_590a4941_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(37);
 var normalizeComponent = __webpack_require__(0)
 /* script */
 
@@ -12136,7 +12555,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_8d12aae6_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_590a4941_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -12147,13 +12566,13 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_navbar_vue__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_navbar_vue__ = __webpack_require__(4);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_06a7bb40_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_navbar_vue__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_86a26180_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_navbar_vue__ = __webpack_require__(18);
 var normalizeComponent = __webpack_require__(0)
 /* script */
 
@@ -12170,7 +12589,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_navbar_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_06a7bb40_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_navbar_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_86a26180_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_navbar_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -12181,56 +12600,11 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 16 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('v-toolbar',{attrs:{"color":"#616161"}},[_c('v-toolbar-title',[_vm._v("A Mindful Gallery")]),_vm._v(" "),_c('v-spacer'),_vm._v(" "),_c('v-btn',{nativeOn:{"click":function($event){_vm.changePage('Gallery')}}},[_vm._v("Gallery")]),_vm._v(" "),_c('v-btn',{nativeOn:{"click":function($event){_vm.changePage('About')}}},[_vm._v("About")]),_vm._v(" "),_c('v-btn',{nativeOn:{"click":function($event){_vm.changePage('Biblio')}}},[_vm._v("Bibliography")])],1),_vm._v(" "),_c('v-spacer')],1)}
-var staticRenderFns = []
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-/* 17 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_gallery_vue__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_gallery_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_gallery_vue__);
-/* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5cb19aa5_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_gallery_vue__ = __webpack_require__(18);
-var normalizeComponent = __webpack_require__(0)
-/* script */
-
-
-/* template */
-
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_gallery_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5cb19aa5_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_gallery_vue__["a" /* default */],
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-
-/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
-
-
-/***/ }),
 /* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-parallax',{attrs:{"src":"src/images/mountains.jpg","height":"800"}})}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('v-toolbar',{attrs:{"color":"#616161"}},[_c('v-toolbar-title',[_vm._v("A Mindful Gallery")]),_vm._v(" "),_c('v-spacer'),_vm._v(" "),_c('v-btn',{nativeOn:{"click":function($event){_vm.changePage('About')}}},[_vm._v("About")]),_vm._v(" "),_c('v-btn',{nativeOn:{"click":function($event){_vm.changePage('Gallery')}}},[_vm._v("Gallery")]),_vm._v(" "),_c('v-btn',{nativeOn:{"click":function($event){_vm.changePage('Biblio')}}},[_vm._v("Bibliography")])],1),_vm._v(" "),_c('v-spacer')],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -12240,9 +12614,12 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bibliography_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_gallery_vue__ = __webpack_require__(6);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1ae8cc0a_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bibliography_vue__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_8e994260_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_gallery_vue__ = __webpack_require__(28);
+function injectStyle (ssrContext) {
+  __webpack_require__(20)
+}
 var normalizeComponent = __webpack_require__(0)
 /* script */
 
@@ -12252,14 +12629,14 @@ var normalizeComponent = __webpack_require__(0)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = null
+var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-8e994260"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bibliography_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1ae8cc0a_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bibliography_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_gallery_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_8e994260_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_gallery_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -12271,128 +12648,129 @@ var Component = normalizeComponent(
 
 /***/ }),
 /* 20 */
-/***/ (function(module, exports) {
-
-module.exports = [{"subject":"Physiological Changes During Meditation","reference":"http://science.sciencemag.org/content/167/3926/1751","citation":"Wallace, R. K. (1970). Physiological effects of transcendental meditation. Science, 167(3926), 1751-1754."},{"subject":"Gray Matter","reference":"https://www.ncbi.nlm.nih.gov/pubmed/19280691","citation":"Luders, E., Toga, A. W., Lepore, N., & Gaser, C. (2009). The underlying anatomical correlates of long-term meditation: Larger hippocampal and frontal volumes of gray matter. NeuroImage, 45(3), 672–678."},{"subject":"Lower Back Pain","reference":"https://www.ncbi.nlm.nih.gov/pubmed/27002445","citation":"Cherkin, D. C., Sherman, K. J., Balderson, B. H., Cook, A. J., Anderson, M. L., Hawkes, R. J., … Turner, J. A. (2016). Effects of Mindfulness-Based Stress Reduction vs Cognitive-Behavioral Therapy and Usual Care on Back Pain and Functional Limitations among Adults with Chronic Low Back Pain: A Randomized Clinical Trial. JAMA, 315(12), 1240–1249. http://doi.org/10.1001/jama.2016.2323"},{"subject":"Cortical Gyrification","reference":"https://www.ncbi.nlm.nih.gov/pubmed/22393318","citation":"Luders, E., Kurth, F., Mayer, E. A., Toga, A. W., Narr, K. L., & Gaser, C. (2012). The Unique Brain Anatomy of Meditation Practitioners: Alterations in Cortical Gyrification. Frontiers in Human Neuroscience, 6, 34. http://doi.org/10.3389/fnhum.2012.00034"},{"subject":"Neurogenic Inflammation","reference":"https://www.ncbi.nlm.nih.gov/pubmed/23092711","citation":"Rosenkranz, M. A., Davidson, R. J., MacCoon, D. G., Sheridan, J. F., Kalin, N. H., & Lutz, A. (2013). A comparison of mindfulness-based stress reduction and an active control in modulation of neurogenic inflammation. Brain, Behavior, and Immunity, 27C, 174–184. http://doi.org/10.1016/j.bbi.2012.10.013"},{"subject":"Methodology of Pain Relief in Meditation","reference":"https://www.ncbi.nlm.nih.gov/pubmed/26985045","citation":"Zeidan, F., Adler-Neal, A. L., Wells, R. E., Stagnaro, E., May, L. M., Eisenach, J. C., … Coghill, R. C. (2016). Mindfulness-Meditation-Based Pain Relief Is Not Mediated by Endogenous Opioids. The Journal of Neuroscience, 36(11), 3391–3397. http://doi.org/10.1523/JNEUROSCI.4328-15.2016"},{"subject":"Meditation Research Review","reference":"http://noetic.org/sites/default/files/uploads/files/Meditation_Intro.pdf","citation":"Murphy, M., Donovan, S., & Taylor, E. (1997). The physical and psychological effects of meditation: A review of contemporary research. Institute of Noetic Sciences: Petaluma."},{"subject":"Physiological Responses to Meditation","reference":"https://onlinelibrary.wiley.com/doi/abs/10.1111/j.2044-8260.1979.tb00330.x","citation":"West, M. A. (1979). Physiological effects of meditation: A longitudinal study. British                   Journal of Clinical Psychology, 18(2), 219-226."}]
-
-/***/ }),
-/* 21 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stylus_components_parallax_styl__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stylus_components_parallax_styl___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__stylus_components_parallax_styl__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_translatable__ = __webpack_require__(24);
-
-
-
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-  name: 'v-parallax',
-
-  mixins: [__WEBPACK_IMPORTED_MODULE_1__mixins_translatable__["a" /* default */]],
-
-  data () {
-    return {
-      isBooted: false
-    }
-  },
-
-  props: {
-    alt: String,
-    height: {
-      type: [String, Number],
-      default: 500
-    },
-    src: String
-  },
-
-  computed: {
-    styles () {
-      return {
-        display: 'block',
-        opacity: this.isBooted ? 1 : 0,
-        transform: `translate(-50%, ${this.parallax}px)`
-      }
-    }
-  },
-
-  watch: {
-    parallax () {
-      this.isBooted = true
-    }
-  },
-
-  mounted () {
-    this.init()
-  },
-
-  methods: {
-    init () {
-      if (!this.$refs.img) return
-
-      if (this.$refs.img.complete) {
-        this.translate()
-        this.listeners()
-      } else {
-        this.$refs.img.addEventListener('load', () => {
-          this.translate()
-          this.listeners()
-        }, false)
-      }
-    },
-    objHeight () {
-      return this.$refs.img.naturalHeight
-    },
-    elOffsetTop () {
-      return this.$el.offsetTop
-    }
-  },
-
-  render (h) {
-    const imgData = {
-      staticClass: 'parallax__image',
-      style: this.styles,
-      attrs: {
-        src: this.src
-      },
-      ref: 'img'
-    }
-
-    if (this.alt) imgData.attrs.alt = this.alt
-
-    const container = h('div', {
-      staticClass: 'parallax__image-container'
-    }, [
-      h('img', imgData)
-    ])
-
-    const content = h('div', {
-      staticClass: 'parallax__content'
-    }, this.$slots.default)
-
-    return h('div', {
-      staticClass: 'parallax',
-      style: {
-        height: `${this.normalizedHeight}px`
-      },
-      on: this.$listeners
-    }, [container, content])
-  }
-});
-
-
-/***/ }),
-/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(23);
+var content = __webpack_require__(21);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("c5f6f774", content, true, {});
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".titles[data-v-8e994260]{font-size:2.5em}.paragraphs[data-v-8e994260]{font-size:2em}v-card-media[data-v-8e994260]{margin-top:5px}.title[data-v-8e994260]{padding:5px}h1[data-v-8e994260]{text-align:center;color:#000;fontsize:5em}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports) {
+
+/**
+ * Translates the list format produced by css-loader into something
+ * easier to manipulate.
+ */
+module.exports = function listToStyles (parentId, list) {
+  var styles = []
+  var newStyles = {}
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i]
+    var id = item[0]
+    var css = item[1]
+    var media = item[2]
+    var sourceMap = item[3]
+    var part = {
+      id: parentId + ':' + i,
+      css: css,
+      media: media,
+      sourceMap: sourceMap
+    }
+    if (!newStyles[id]) {
+      styles.push(newStyles[id] = { id: id, parts: [part] })
+    } else {
+      newStyles[id].parts.push(part)
+    }
+  }
+  return styles
+}
+
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports) {
+
+module.exports = [{"Opened":false,"Title":"Reduces Oxygen Consumption","img":"src/images/underwater.jpg","descriptions":["Vipassana meditation practices commonly focus on a person becoming more aware of their physical self, which most of the time comes through the breath. The breath is used as a tool by which one can calm and center themselves, resulting with them becoming more in tune with their bodies. Studies show that there are tangible physiological differences that occur when one is in a meditative state, including a reduction in the amount of oxygen the body consumes while meditating.","I chose this image, of what appears to be a woman meditating underwater, largely because I think it represents a moment in which we are most in tune with the breath in our own bodies. While underwater, we are much more cognizant of how deep our previous breath was, how much oxygen we use, and overall much more appreciative of the breath itself."]},{"Opened":false,"Title":"Increases Gray Matter Volume","img":"src/images/graymatter.jpg","descriptions":["A study in the neuroimaging journal, Neuroimage, suggests that there are physical brain differences in those who are long term meditators, compared to those who are not. One of these differences is an increase in volume of gray matter in the in the right orbito-frontal cortex, in addition to increases of gray matter in the right hippocampus. Gray matter contains the majority of the brains neuronal cells, and includes regions of the brain involved with muscle control and sensory perception, among other things","I chose this image to represent this topic precisely because it is a imaging scan of the topic -- the gray matter itself. It is both beautiful and bewildering that we can view something which essentially constitutes what the “we” is, which is a reason why I find an image of a brain to be particularly compelling. Additionally, this image clearly contrasts the gray matter of the brain with the other parts of the brain"]},{"Opened":false,"Title":"Decreases Lower Back Pain","img":"src/images/skeleton.jpg","descriptions":["A study was published in the Journal of the American Medical Association, showing that a regimen of MSBR (Mindfulness Based Stress Relief) was effective in reducing lower back pain in young to middle aged adults, when compared to CBT (Cognitive Based Therapy), and usual care. After 26 weeks, participants who were in the MSBR or CBT regimens reported greater improvement in back bain and movement, as opposed to those who just received normal care. Additionally, lower back injuries are incredibly common, especially in the elderly, and those who work in labor intensive jobs.","The image included is of a skeleton whose lower back (lumbar spine) is highlighted with a red circle. From this view, you can see how much of your body is supported by this part of your back, and could therefore imagine how painful it could be to injure."]},{"Opened":false,"Title":"Increases Cortical Gyrification","img":"src/images/gyrification.jpg","descriptions":["A study published in the journal “Front Hum Neurosci” examined the brains of those who were long term meditators, and compared them to the brains of those who were not. While most studies of this kind examined gray matter volume or cortical size, this study instead opted to measure the amount of cortical gyrification present in the brain. Gyrification describes the pattern and level to which the brain’s surface is folded. The study found that long term meditators had significantly more gyrification within the left precentral gyrus, right fusiform gyrus, right cuneus, as well as left and right anterior dorsal insula, which may suggest aspects of brain physiology which corresponds to meditative skills.","I chose this image because it allows you to see the various levels of gyrification between several different brains (both human and animal). It is very visually convincing to see the difference in gyrification between the brain of a full grown human, and the brain of a developing human, which makes it easy to imagine how an increase in gyrification can lead to a difference in intelligence."]},{"Opened":false,"Title":"Reduces Neuroinflammation","img":"src/images/inflammation.jpg","descriptions":["A study published in the Neuroimmunology journal, Brain Behav Immun, reports that MBSR (Mindfulness Based Stress Reduction) may reduce the inflammatory response produced by stress, when compared to a “well matched control intervention”, HEP (Health Enhancement Program). Random groups were chosen for each of the two treatments, and capsaicin cream was put on the participants’ forearms. Endocrine measures of stress were taken before and after the treatment was applied. MBSR and HEP groups showed comparable levels of stress-based cortisol post treatment, but the MBSR group showed lower levels of post-stress inflammatory response.","I chose this picture, because it gives some visual representation of the Neuroinflammation response, which is otherwise hard to think about or visualize. The red dots are stress induced APP fragments."]},{"Opened":false,"Title":"Non-Opioid Pain Reduction","img":"src/images/pills.jpg","descriptions":["A study published in the Journal of Neuroscience finds that the pain reduction provided by mindfulness and meditation related therapies may not be a result of endogenous opioids. As the name suggests, endogenous opioids are opioids which are produced by the body in response to extreme physical discomfort or pain. This can be disadvantageous, however, since these opioids can actually interact with other medications that the patient may be taking. The study discusses possible other physiological pathways that mindfulness may employ when mediating pain.","I chose this picture because it represents an alternative that mindfulness based practices can hope to replace. Prescription drug use is at an all time high (both in terms of consumption and overdoses), and the ability to lessen it in any way would be an incredibly useful tool to potentially increase public health."]},{"Opened":false,"Title":"Increases Levels of Relaxation","img":"src/images/beach.jpg","descriptions":["A 6 month long study in the British Journal of Clinical Psychology outlined the differences in several key measurements of relaxation between a group who practiced meditation, and a group who did not. The experimental group had its skin conductance measured pre-, during- and post- meditation, and compared to a control group. The experimental group showed continually lower levels of spontaneous skin conductance throughout the six months, while the control group showed relatively no change. In addition, the experimental group showed overall lower skin conductance, suggesting the production of physiological relaxation, even when while not actively meditating. ","For myself, the beach is the most relaxing place that I can imagine. The sound of the waves gently lapping the shore, combined with the sun gently shining down on the sand puts me in a place of deep peace and relaxation."]},{"Opened":false,"Title":"Reduced Oxygen Consumption While Meditating","img":"src/images/underwater.jpg","descriptions":["Vipassana meditation practices commonly focus on a person becoming more aware of their physical self, which most of the time comes through the breath. The breath is used as a tool by which one can calm and center themselves, resulting with them becoming more in tune with their bodies. Studies show that there are tangible physiological differences that occur when one is in a meditative state, including a difference in the body’s oxygen consumption. ","I chose this image, of what appears to be a woman meditating underwater, largely because I think it represents a moment in which we are most in tune with the breath in our own bodies. While underwater, we are much more cognizant of how deep our previous breath was, how much oxygen we use, and overall much more appreciative of the breath itself."]}]
+
+/***/ }),
+/* 24 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = ({
+  name: 'v-card-media',
+
+  props: {
+    contain: Boolean,
+    height: {
+      type: [Number, String],
+      default: 'auto'
+    },
+    src: {
+      type: String
+    }
+  },
+
+  render (h) {
+    const data = {
+      'class': 'card__media',
+      style: {
+        height: !isNaN(this.height) ? `${this.height}px` : this.height
+      },
+      on: this.$listeners
+    }
+
+    const children = []
+
+    if (this.src) {
+      children.push(h('div', {
+        'class': 'card__media__background',
+        style: {
+          background: `url("${this.src}") center center / ${this.contain ? 'contain' : 'cover'} no-repeat`
+        }
+      }))
+    }
+
+    children.push(h('div', {
+      'class': 'card__media__content'
+    }, this.$slots.default))
+
+    return h('div', data, children)
+  }
+});
+
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(26);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(7)(content, {});
+var update = __webpack_require__(8)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -12409,10 +12787,10 @@ if(false) {
 }
 
 /***/ }),
-/* 23 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)(false);
+exports = module.exports = __webpack_require__(1)(false);
 // imports
 
 
@@ -12423,7 +12801,7 @@ exports.push([module.i, ".parallax{position:relative;overflow:hidden;z-index:0}.
 
 
 /***/ }),
-/* 24 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12495,24 +12873,23 @@ exports.push([module.i, ".parallax{position:relative;overflow:hidden;z-index:0}.
 
 
 /***/ }),
-/* 25 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-parallax',{attrs:{"src":"src/images/gap.jpg","height":"100%"}},[_c('v-container',{attrs:{"fluid":"","grid-list-lg":""}},[_c('v-layout',{attrs:{"row":"","wrap":""}},_vm._l((_vm.citationList),function(cit){return _c('v-flex',{attrs:{"row-wrap":"","xs4":""}},[_c('v-card',{attrs:{"height":"100%","color":"grey"}},[_c('v-card-title',[_vm._v("\n                        "+_vm._s(cit.subject)+"\n                    ")]),_vm._v(" "),_c('v-card-text',[_vm._v("\n                        Internet Reference : "),_c('a',{attrs:{"href":cit.reference}},[_vm._v(_vm._s(cit.reference))])]),_vm._v(" "),_c('v-card-text',[_vm._v("\n                        "+_vm._s(cit.citation)+"\n                    ")])],1)],1)}))],1)],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-parallax',{attrs:{"src":"src/images/mountains.jpg","height":"150%"}},[_c('div',{staticClass:"title"},[_c('h1',[_vm._v("Some of the Positive Effects of Meditation/Mindfulness")])]),_vm._v(" "),_c('v-container',{attrs:{"fluid":"","grid-list-lg":""}},[_c('v-layout',{attrs:{"row":"","wrap":""}},_vm._l((_vm.galleryElements),function(image){return _c('v-flex',{attrs:{"row-wrap":"","xs6":""}},[_c('v-card',{attrs:{"height":"100%","color":"grey"}},[_c('v-dialog',{attrs:{"hide-overlay":"","fullscreen":""},model:{value:(image.Opened),callback:function ($$v) {_vm.$set(image, "Opened", $$v)},expression:"image.Opened"}},[_c('v-card',{attrs:{"color":"grey"}},[_c('v-toolbar',{attrs:{"dark":""}},[_c('v-toolbar-title',{staticClass:"titles",attrs:{"primary-title":""}},[_vm._v(_vm._s(image.Title))]),_vm._v(" "),_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},nativeOn:{"click":function($event){image.Opened = false}}},[_c('v-icon',[_vm._v("close")])],1)],1),_vm._v(" "),_c('v-container',[_c('v-card-media',{attrs:{"src":image.img,"contain":"","height":"500"}})],1),_vm._v(" "),_c('v-flex',_vm._l((image.descriptions),function(text){return _c('v-card-text',{staticClass:"paragraphs"},[_vm._v("     "+_vm._s(text))])}))],1)],1),_vm._v(" "),_c('v-toolbar',[_c('v-toolbar-title',{staticClass:"titles"},[_vm._v("\n                                                 "+_vm._s(image.Title)+"\n                                          ")]),_vm._v(" "),_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},nativeOn:{"click":function($event){image.Opened = true}}},[_c('v-icon',[_vm._v("open_with")])],1)],1),_vm._v(" "),_c('v-flex',[_c('v-card-media',{attrs:{"src":image.img,"contain":"","height":"350"}})],1)],1)],1)}))],1)],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 26 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_about_vue__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_about_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_about_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bibliography_vue__ = __webpack_require__(9);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_47f15034_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_about_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1ae8cc0a_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bibliography_vue__ = __webpack_require__(31);
 var normalizeComponent = __webpack_require__(0)
 /* script */
 
@@ -12528,39 +12905,125 @@ var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_about_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_47f15034_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_about_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bibliography_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1ae8cc0a_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bibliography_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
 
-/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
+/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
 
 
 /***/ }),
-/* 27 */
+/* 30 */
+/***/ (function(module, exports) {
+
+module.exports = [{"subject":"Physiological Changes During Meditation","reference":"http://science.sciencemag.org/content/167/3926/1751","citation":"Wallace, R. K. (1970). Physiological effects of transcendental meditation. Science, 167(3926), 1751-1754."},{"subject":"Gray Matter","reference":"https://www.ncbi.nlm.nih.gov/pubmed/19280691","citation":"Luders, E., Toga, A. W., Lepore, N., & Gaser, C. (2009). The underlying anatomical correlates of long-term meditation: Larger hippocampal and frontal volumes of gray matter. NeuroImage, 45(3), 672–678."},{"subject":"Lower Back Pain","reference":"https://www.ncbi.nlm.nih.gov/pubmed/27002445","citation":"Cherkin, D. C., Sherman, K. J., Balderson, B. H., Cook, A. J., Anderson, M. L., Hawkes, R. J., … Turner, J. A. (2016). Effects of Mindfulness-Based Stress Reduction vs Cognitive-Behavioral Therapy and Usual Care on Back Pain and Functional Limitations among Adults with Chronic Low Back Pain: A Randomized Clinical Trial. JAMA, 315(12), 1240–1249. http://doi.org/10.1001/jama.2016.2323"},{"subject":"Cortical Gyrification","reference":"https://www.ncbi.nlm.nih.gov/pubmed/22393318","citation":"Luders, E., Kurth, F., Mayer, E. A., Toga, A. W., Narr, K. L., & Gaser, C. (2012). The Unique Brain Anatomy of Meditation Practitioners: Alterations in Cortical Gyrification. Frontiers in Human Neuroscience, 6, 34. http://doi.org/10.3389/fnhum.2012.00034"},{"subject":"Neurogenic Inflammation","reference":"https://www.ncbi.nlm.nih.gov/pubmed/23092711","citation":"Rosenkranz, M. A., Davidson, R. J., MacCoon, D. G., Sheridan, J. F., Kalin, N. H., & Lutz, A. (2013). A comparison of mindfulness-based stress reduction and an active control in modulation of neurogenic inflammation. Brain, Behavior, and Immunity, 27C, 174–184. http://doi.org/10.1016/j.bbi.2012.10.013"},{"subject":"Methodology of Pain Relief in Meditation","reference":"https://www.ncbi.nlm.nih.gov/pubmed/26985045","citation":"Zeidan, F., Adler-Neal, A. L., Wells, R. E., Stagnaro, E., May, L. M., Eisenach, J. C., … Coghill, R. C. (2016). Mindfulness-Meditation-Based Pain Relief Is Not Mediated by Endogenous Opioids. The Journal of Neuroscience, 36(11), 3391–3397. http://doi.org/10.1523/JNEUROSCI.4328-15.2016"},{"subject":"Meditation Research Review","reference":"http://noetic.org/sites/default/files/uploads/files/Meditation_Intro.pdf","citation":"Murphy, M., Donovan, S., & Taylor, E. (1997). The physical and psychological effects of meditation: A review of contemporary research. Institute of Noetic Sciences: Petaluma."},{"subject":"Physiological Responses to Meditation","reference":"https://onlinelibrary.wiley.com/doi/abs/10.1111/j.2044-8260.1979.tb00330.x","citation":"West, M. A. (1979). Physiological effects of meditation: A longitudinal study. British                   Journal of Clinical Psychology, 18(2), 219-226."}]
+
+/***/ }),
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-parallax',{attrs:{"src":"src/images/mountain2.jpg","height":"800"}},[_c('v-container',{attrs:{"align-center":""}},[_c('v-card',{attrs:{"color":"grey"}},[_c('v-card-text',{attrs:{"display-3":""}},[_vm._v("\n                     For this project, I wanted to provide more of a look at more of the \"hard science\"\n                behind meditation, and juxtapose it with pictures of how these benefits of meditation are displayed artistically.\n                From the outside, meditation can seem to be shrouded in mysticism and practiced exclusively by holy men\n                or ascetics who dedicate their entire lives to the cause. This cannot be further from the truth, but\n                it can be easy to understand why some might think this. From this perspective, it can be difficult for a\n                beginner to see the true value and meditation and mindfulness, and seem daunting to break into the practice\n                at all.\n            ")]),_vm._v(" "),_c('v-card-text',[_vm._v("\n                     I believe that a good way to combat this \"stigma\" and made mindfulness more accessible\n                is to be up front with the health benefits that these practices provide, in addition to having visual representations\n                of how these certain characteristics may make you feel.\n            ")]),_vm._v(" "),_c('v-card-text',[_vm._v("\n                MORE TEXT TO COME!!!!!!!!!!!!!\n            ")])],1)],1)],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-parallax',{attrs:{"src":"src/images/gap.jpg","height":"100%"}},[_c('v-container',{attrs:{"fluid":"","grid-list-lg":""}},[_c('v-layout',{attrs:{"row":"","wrap":""}},_vm._l((_vm.citationList),function(cit){return _c('v-flex',{attrs:{"row-wrap":"","xs4":""}},[_c('v-card',{attrs:{"height":"100%","color":"grey"}},[_c('v-card-title',[_vm._v("\n                        "+_vm._s(cit.subject)+"\n                    ")]),_vm._v(" "),_c('v-card-text',[_vm._v("\n                        Internet Reference : "),_c('a',{attrs:{"href":cit.reference}},[_vm._v(_vm._s(cit.reference))])]),_vm._v(" "),_c('v-card-text',[_vm._v("\n                        "+_vm._s(cit.citation)+"\n                    ")])],1)],1)}))],1)],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 28 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('NavBar',{attrs:{"changePage":_vm.changeSite}}),_vm._v(" "),(this.checkCurrentSite('Gallery'))?_c('Gallery'):_vm._e(),_vm._v(" "),(this.checkCurrentSite('Biblio'))?_c('Biblio'):_vm._e(),_vm._v(" "),(this.checkCurrentSite('About'))?_c('About'):_vm._e()],1)}
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_about_vue__ = __webpack_require__(10);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_13e6b641_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_about_vue__ = __webpack_require__(36);
+function injectStyle (ssrContext) {
+  __webpack_require__(33)
+}
+var normalizeComponent = __webpack_require__(0)
+/* script */
+
+
+/* template */
+
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_about_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_13e6b641_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_about_vue__["a" /* default */],
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+
+/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
+
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(34);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(5)("6808b404", content, true, {});
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".title{margin:5px}h1{color:#000;text-align:center}.paragraphs{font-size:2em}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports) {
+
+module.exports = ["For this project, I wanted to provide a more factual basis of the benefits associated with mindfulness and meditation. So often, people are turned off of meditation because it seems so shrouded in mysticism, and claims that can be seen as magical. Most serious practitioners of meditation know that there is no magic involved in the practice, but it can still be difficult to shake the stereotype when it has already taken hold. There are numerous physical benefits to meditation that have been thoroughly studied and displayed, and I think that these are good enough reasons as any for someone to seriously consider practicing meditation and mindfulness.","I myself practice meditation, not necessarily for the physical benefits provided, but because of why it provides for me mentally. Initially, I was skeptical of some of the claims made in meditative texts, and decided to conduct my own research to consider whether or not I should consider meditation because of its physical benefits. Though most of these physical benefits come from a long time practicing meditation, it has encouraged me to invest more in my meditative practices, and has made me more aware the damage that stress can cause to the body. Since starting regular meditation 6 or so months ago, I find that I am more energetic in the mornings, generally feel less latent pain, and am overall happier in my day to day life.","With this website, I hope to encourage those who are skeptical about meditation to at least take a second look before they decide to write off the practice entirely. While I may not be able to convince everyone of the efficacy of meditation, if I change the mind of even 1 person, I will consider it worthwhile. Though meditation can be initially difficult, I find that the more I practice it, the more I value it and find it enjoyable. I think that meditation is a valuable practice that anyone can pick up, and that everyone should at least try to pick up once or twice in their lives."]
+
+/***/ }),
+/* 36 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-parallax',{attrs:{"src":"src/images/mountain2.jpg","height":"800"}},[_c('div',{staticClass:"title"},[_c('h1',[_vm._v("About This Project")])]),_vm._v(" "),_c('v-container',{attrs:{"align-center":""}},[_c('v-flex',{attrs:{"width":"60%"}},[_c('v-card',{attrs:{"color":"grey"}},_vm._l((_vm.aboutElements),function(elem){return _c('v-card-text',{staticClass:"paragraphs"},[_vm._v("\n                         "+_vm._s(elem)+"\n                ")])}))],1)],1)],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 29 */
+/* 37 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('NavBar',{attrs:{"changePage":_vm.changeSite}}),_vm._v(" "),(this.checkCurrentSite('Gallery'))?_c('Gallery',{attrs:{"getHeight":_vm.giveHeight}}):_vm._e(),_vm._v(" "),(this.checkCurrentSite('Biblio'))?_c('Biblio'):_vm._e(),_vm._v(" "),(this.checkCurrentSite('About'))?_c('About'):_vm._e()],1)}
+var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -30192,16 +30655,16 @@ function install(Vue) {
 //# sourceMappingURL=vuetify.js.map
 
 /***/ }),
-/* 30 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(31);
+var content = __webpack_require__(40);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(7)(content, {});
+var update = __webpack_require__(8)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -30218,10 +30681,10 @@ if(false) {
 }
 
 /***/ }),
-/* 31 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)(false);
+exports = module.exports = __webpack_require__(1)(false);
 // imports
 
 

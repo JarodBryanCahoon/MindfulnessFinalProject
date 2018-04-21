@@ -1,36 +1,47 @@
 <template>
-       <v-parallax src="src/images/mountains.jpg" height="800">
+       <v-parallax src="src/images/mountains.jpg" height="150%">
+              <div class="title">
+                     <h1>Some of the Positive Effects of Meditation/Mindfulness</h1>
+              </div>
               <v-container fluid grid-list-lg>
-                     <v-layout row-wrap>
-                            <v-flex row-wrap xs4 v-for="image in galleryElements">
+                     <v-layout row wrap>
+                            <v-flex row-wrap xs6 v-for="image in galleryElements">
                                    <v-card height="100%" color="grey">
-                                          <v-dialog v-model="image.Opened">
+                                          <v-dialog hide-overlay fullscreen v-model="image.Opened">
                                                  <v-card color="grey">
-                                                        <v-card-title class="titles" primary-title>{{image.Title}}</v-card-title>
-                                                        <v-card-media
-                                                                :src=image.img
-                                                                contain
-                                                                height="500"
-                                                        ></v-card-media>
+                                                        <v-toolbar dark>
+                                                               <v-toolbar-title class="titles" primary-title>{{image.Title}}</v-toolbar-title>
+                                                               <v-spacer></v-spacer>
+                                                               <v-btn icon v-on:click.native="image.Opened = false">
+                                                                      <v-icon>close</v-icon>
+                                                               </v-btn>
+                                                        </v-toolbar>
+                                                        <v-container>
+                                                               <v-card-media
+                                                                       :src=image.img
+                                                                       contain
+                                                                       height="500"
+                                                               ></v-card-media>
+                                                        </v-container>
                                                         <v-flex>
-                                                               <p class="paragraphs" v-for="text in image.descriptions">{{text}}</p>
+                                                               <v-card-text class="paragraphs" v-for="text in image.descriptions">&nbsp&nbsp&nbsp&nbsp {{text}}</v-card-text>
                                                         </v-flex>
                                                  </v-card>
                                           </v-dialog>
-                                          <v-layout row>
-                                                 <v-card-title class="titles">
+                                          <v-toolbar>
+                                                 <v-toolbar-title class="titles">
                                                         {{image.Title}}
-                                                 </v-card-title>
+                                                 </v-toolbar-title>
                                                  <v-spacer></v-spacer>
                                                  <v-btn icon v-on:click.native="image.Opened = true">
                                                         <v-icon>open_with</v-icon>
                                                  </v-btn>
-                                          </v-layout>
+                                          </v-toolbar>
                                           <v-flex>
                                                  <v-card-media
                                                          :src=image.img
                                                          contain
-                                                         height="300"
+                                                         height="350"
                                                  ></v-card-media>
                                           </v-flex>
                                    </v-card>
@@ -54,9 +65,18 @@
                 galleryElements : gallery
             }
         },
+
         props:[
             'getHeight'
-        ]
+        ],
+
+        methods : {
+            tabify(text){
+                return "&nbsp&nbsp&nbsp&nbsp" + text;
+            }
+
+        }
+
     }
 </script>
 
@@ -66,6 +86,20 @@
        }
 
        .paragraphs{
-              font-size: 1.3em;
+              font-size: 2.0em;
+       }
+
+       v-card-media{
+              margin-top : 5px;
+       }
+
+       .title{
+              padding : 5px;
+       }
+
+       h1 {
+              text-align: center;
+              color : black;
+              fontsize : 5.0em;
        }
 </style>
