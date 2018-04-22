@@ -15,6 +15,7 @@
                                                                <v-btn icon v-on:click.native="image.Opened = false">
                                                                       <v-icon>close</v-icon>
                                                                </v-btn>
+
                                                         </v-toolbar>
                                                         <v-container>
                                                                <v-card-media
@@ -26,6 +27,16 @@
                                                         <v-flex>
                                                                <v-card-text class="paragraphs" v-for="text in image.descriptions">&nbsp&nbsp&nbsp&nbsp {{text}}</v-card-text>
                                                         </v-flex>
+                                                        <v-layout row>
+                                                               <v-card-text class="citations">
+                                                                      <a :href=image.imgsrc>Image Source</a>
+                                                               </v-card-text>
+                                                               <v-spacer></v-spacer>
+                                                               <v-card-text class="citations">
+                                                                      <a :href=image.res>Research</a>
+                                                               </v-card-text>
+                                                        </v-layout>
+
                                                  </v-card>
                                           </v-dialog>
                                           <v-toolbar>
@@ -87,6 +98,11 @@
 
        .paragraphs{
               font-size: 2.0em;
+              line-height : 1.5;
+       }
+
+       .citations{
+
        }
 
        v-card-media{

@@ -8,7 +8,7 @@
                             {{cit.subject}}
                         </v-card-title>
                         <v-card-text>
-                            Internet Reference : <a :href=cit.reference>{{cit.reference}}</a>
+                            <a :href=cit.reference>Internet Source</a>
                         </v-card-text>
                         <v-card-text>
                             {{cit.citation}}

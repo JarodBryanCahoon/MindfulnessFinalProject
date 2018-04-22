@@ -3,6 +3,8 @@
     "Opened" : false,
     "Title" : "Reduces Oxygen Consumption",
     "img": "src/images/underwater.jpg",
+    "imgsrc" : "https://pixabay.com/en/yoga-meditation-exercise-relaxation-2615426/",
+    "res" : "http://science.sciencemag.org/content/167/3926/1751",
     "descriptions" : [
       "Vipassana meditation practices commonly focus on a person becoming more aware of their physical self, which most of the time comes through the breath. The breath is used as a tool by which one can calm and center themselves, resulting with them becoming more in tune with their bodies. Studies show that there are tangible physiological differences that occur when one is in a meditative state, including a reduction in the amount of oxygen the body consumes while meditating.",
       "I chose this image, of what appears to be a woman meditating underwater, largely because I think it represents a moment in which we are most in tune with the breath in our own bodies. While underwater, we are much more cognizant of how deep our previous breath was, how much oxygen we use, and overall much more appreciative of the breath itself."
@@ -12,6 +14,8 @@
     "Opened" : false,
     "Title" : "Increases Gray Matter Volume",
     "img": "src/images/graymatter.jpg",
+    "imgsrc" : "https://commons.wikimedia.org/wiki/File:Grey_matter_heterotopia_MRI.jpg",
+    "res" : "https://www.ncbi.nlm.nih.gov/pubmed/19280691",
     "descriptions" : [
       "A study in the neuroimaging journal, Neuroimage, suggests that there are physical brain differences in those who are long term meditators, compared to those who are not. One of these differences is an increase in volume of gray matter in the in the right orbito-frontal cortex, in addition to increases of gray matter in the right hippocampus. Gray matter contains the majority of the brains neuronal cells, and includes regions of the brain involved with muscle control and sensory perception, among other things",
       "I chose this image to represent this topic precisely because it is a imaging scan of the topic -- the gray matter itself. It is both beautiful and bewildering that we can view something which essentially constitutes what the “we” is, which is a reason why I find an image of a brain to be particularly compelling. Additionally, this image clearly contrasts the gray matter of the brain with the other parts of the brain"
@@ -21,6 +25,8 @@
     "Opened" : false,
     "Title" : "Decreases Lower Back Pain",
     "img": "src/images/skeleton.jpg",
+    "imgsrc" : "https://commons.wikimedia.org/wiki/File:Lumbar_region_in_human_skeleton.svg",
+    "res" : "https://www.ncbi.nlm.nih.gov/pubmed/27002445",
     "descriptions" : [
       "A study was published in the Journal of the American Medical Association, showing that a regimen of MSBR (Mindfulness Based Stress Relief) was effective in reducing lower back pain in young to middle aged adults, when compared to CBT (Cognitive Based Therapy), and usual care. After 26 weeks, participants who were in the MSBR or CBT regimens reported greater improvement in back bain and movement, as opposed to those who just received normal care. Additionally, lower back injuries are incredibly common, especially in the elderly, and those who work in labor intensive jobs.",
       "The image included is of a skeleton whose lower back (lumbar spine) is highlighted with a red circle. From this view, you can see how much of your body is supported by this part of your back, and could therefore imagine how painful it could be to injure."
@@ -30,6 +36,8 @@
     "Opened" : false,
     "Title" : "Increases Cortical Gyrification",
     "img": "src/images/gyrification.jpg",
+    "imgsrc" : "https://commons.wikimedia.org/wiki/File:Thickness_of_an_humn_adult_cerebral_cortex.jpg",
+    "res" : "https://www.ncbi.nlm.nih.gov/pubmed/22393318",
     "descriptions" : [
       "A study published in the journal “Front Hum Neurosci” examined the brains of those who were long term meditators, and compared them to the brains of those who were not. While most studies of this kind examined gray matter volume or cortical size, this study instead opted to measure the amount of cortical gyrification present in the brain. Gyrification describes the pattern and level to which the brain’s surface is folded. The study found that long term meditators had significantly more gyrification within the left precentral gyrus, right fusiform gyrus, right cuneus, as well as left and right anterior dorsal insula, which may suggest aspects of brain physiology which corresponds to meditative skills.",
       "I chose this image because it allows you to see the various levels of gyrification between several different brains (both human and animal). It is very visually convincing to see the difference in gyrification between the brain of a full grown human, and the brain of a developing human, which makes it easy to imagine how an increase in gyrification can lead to a difference in intelligence."
@@ -39,6 +47,8 @@
     "Opened" : false,
     "Title" : "Reduces Neuroinflammation",
     "img": "src/images/inflammation.jpg",
+    "imgsrc" : "https://commons.wikimedia.org/wiki/File:Systemic_Inflammation_AD_03.jpg",
+    "res" : "https://www.ncbi.nlm.nih.gov/pubmed/23092711",
     "descriptions" : [
       "A study published in the Neuroimmunology journal, Brain Behav Immun, reports that MBSR (Mindfulness Based Stress Reduction) may reduce the inflammatory response produced by stress, when compared to a “well matched control intervention”, HEP (Health Enhancement Program). Random groups were chosen for each of the two treatments, and capsaicin cream was put on the participants’ forearms. Endocrine measures of stress were taken before and after the treatment was applied. MBSR and HEP groups showed comparable levels of stress-based cortisol post treatment, but the MBSR group showed lower levels of post-stress inflammatory response.",
       "I chose this picture, because it gives some visual representation of the Neuroinflammation response, which is otherwise hard to think about or visualize. The red dots are stress induced APP fragments."
@@ -48,6 +58,8 @@
     "Opened" : false,
     "Title" : "Non-Opioid Pain Reduction",
     "img": "src/images/pills.jpg",
+    "imgsrc" : "https://pixabay.com/en/headache-pain-pills-medication-1540220/",
+    "res" : "https://www.ncbi.nlm.nih.gov/pubmed/26985045",
     "descriptions" : [
       "A study published in the Journal of Neuroscience finds that the pain reduction provided by mindfulness and meditation related therapies may not be a result of endogenous opioids. As the name suggests, endogenous opioids are opioids which are produced by the body in response to extreme physical discomfort or pain. This can be disadvantageous, however, since these opioids can actually interact with other medications that the patient may be taking. The study discusses possible other physiological pathways that mindfulness may employ when mediating pain.",
       "I chose this picture because it represents an alternative that mindfulness based practices can hope to replace. Prescription drug use is at an all time high (both in terms of consumption and overdoses), and the ability to lessen it in any way would be an incredibly useful tool to potentially increase public health."
@@ -57,6 +69,8 @@
     "Opened" : false,
     "Title" : "Increases Levels of Relaxation",
     "img": "src/images/beach.jpg",
+    "imgsrc" : "https://www.pexels.com/photo/beach-vacation-relaxation-holidays-3819/",
+    "res" : "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.2044-8260.1979.tb00330.x",
     "descriptions" : [
       "A 6 month long study in the British Journal of Clinical Psychology outlined the differences in several key measurements of relaxation between a group who practiced meditation, and a group who did not. The experimental group had its skin conductance measured pre-, during- and post- meditation, and compared to a control group. The experimental group showed continually lower levels of spontaneous skin conductance throughout the six months, while the control group showed relatively no change. In addition, the experimental group showed overall lower skin conductance, suggesting the production of physiological relaxation, even when while not actively meditating. ",
       "For myself, the beach is the most relaxing place that I can imagine. The sound of the waves gently lapping the shore, combined with the sun gently shining down on the sand puts me in a place of deep peace and relaxation."
@@ -64,11 +78,65 @@
   },
   {
     "Opened" : false,
-    "Title" : "Reduced Oxygen Consumption While Meditating",
-    "img": "src/images/underwater.jpg",
+    "Title" : "Better Sleep",
+    "img": "src/images/sleep.jpg",
+    "imgsrc" : "https://www.flickr.com/photos/criminalintent/16596467902",
+    "res" : "https://www.health.harvard.edu/blog/mindfulness-meditation-helps-fight-insomnia-improves-sleep-201502187726",
     "descriptions" : [
-      "Vipassana meditation practices commonly focus on a person becoming more aware of their physical self, which most of the time comes through the breath. The breath is used as a tool by which one can calm and center themselves, resulting with them becoming more in tune with their bodies. Studies show that there are tangible physiological differences that occur when one is in a meditative state, including a difference in the body’s oxygen consumption. ",
-      "I chose this image, of what appears to be a woman meditating underwater, largely because I think it represents a moment in which we are most in tune with the breath in our own bodies. While underwater, we are much more cognizant of how deep our previous breath was, how much oxygen we use, and overall much more appreciative of the breath itself."
+      "A Harvard health blog reports on a study which was designed to test how well those who meditated slept. Over the 6 weeks of the study, half of the participants participated in a mindful awareness program, and the other half of the participants were placed into a sleep health class, which taught them how to improve their sleep habits. Every week, the participants met for 1 hour and reported their findings. The mindfulness group reported less insomnia, fatigue, and depression at the end of the six weeks.",
+      "I chose this picture, because I remember some of the best naps that I have ever had were when I was a kid. This picture brings me back to those days of continuous sleep, and makes me feel somewhat calm and refreshed."
+    ]
+  },
+  {
+    "Opened" : false,
+    "Title" : "Parasympathetic Nervous System",
+    "img": "src/images/nerves.jpg",
+    "imgsrc" : "https://upload.wikimedia.org/wikipedia/commons/2/24/Anatomy_and_physiology_of_animals_Function_of_the_sympathetic_%26_parasympathetic_nervous_systems.jpg",
+    "res" : "https://www.amethystrecovery.org/activating-parasympathetic-nervous-system/",
+    "descriptions" : [
+      "While most people know of the “fight or flight” response triggered by the sympathetic nervous system, not everyone knows that there is an equal and opposite reaction which is triggered by the parasympathetic nervous system, and is sometimes known as the “rest and digest” response. Being able to effectively “activate” this system is valuable for being able to stay calm in tough situations, and to relieve stress. Several of the exercises suggested to do this include meditation and other mindfulness based practices, such as emotional awareness and explicit gratitude.",
+      "This image does a good job of outlining what the parasympathetic nervous system does, especially in comparison to the sympathetic nervous system. I also think the imagery of the gazelle and the cheetah gives a good comparison for how each of these systems function."
+    ]
+  },
+  {
+    "Opened" : false,
+    "Title" : "Reduces Cortisol Levels",
+    "img": "src/images/stress.jpg",
+    "imgsrc" : "http://www.thebluediamondgallery.com/wooden-tile/images/stress.jpg",
+    "res" : "https://www.sciencedirect.com/science/article/pii/003193849190543W",
+    "descriptions" : [
+      "A study was conducted on men aged 20-25 years old comparing the levels of serum cortisol in the systems of the men who meditated regularly, versus the men who did not meditate regularly. After each of the men were instructed to meditate, it was found that the group who meditated regularly had much lower levels of serum cortisol, diastolic pressure, and pulse rate when compared to the group of men who did not meditate regularly. This indicates that meditation may cause overall cortisol levels to drop in addition to lower cortisol levels immediately after meditating.",
+      "Since cortisol is the stress hormone, I only found it appropriate that I found an image related to stress, and nothing stresses me out more than Scrabble."
+    ]
+  },
+  {
+    "Opened" : false,
+    "Title" : "Improves Critical Thinking",
+    "img": "src/images/thinking.jpg",
+    "imgsrc" : "https://pixabay.com/en/think-thinking-hand-reflect-622689/",
+    "res" : "https://www.frontiersin.org/articles/10.3389/fpsyg.2015.02043/full",
+    "descriptions" : [
+      "A study conducted found found a positive relationship between dispositional mindfulness and critical thinking. Though there is no causal relationship established, this study within the context of historical studies gives good credence to the fact that a causal relationship may exist between the two."
+    ]
+  },
+  {
+    "Opened" : false,
+    "Title" : "Mediates Heart Disease",
+    "img": "src/images/heart.jpg",
+    "imgsrc" : "https://pixabay.com/en/heart-love-red-valentine-romantic-157895/",
+    "res" : "https://journals.lww.com/familyandcommunityhealth/Abstract/2003/01000/Mindfulness_Meditation,_Anxiety_Reduction,_and.4.aspx",
+    "descriptions" : [
+      "A study posted in the journal Family and Community health found that anxiety reduction through MBSR (Mindfulness Based Stress Reduction) may positively contribute to heart health, and help to prevent heart disease. In this study, an MBSR group was compared to a control group in women who had heart disease, and the MSBR group found some reduction in pain and severity of symptoms."
+    ]
+  },
+  {
+    "Opened" : false,
+    "Title" : "Reduce Depression and Anxiety",
+    "img": "src/images/anxiety.jpg",
+    "imgsrc" : "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwizpbbFy8zaAhUS11MKHZvRAvcQjRx6BAgAEAU&url=http%3A%2F%2Fwww.vandekatgeenkwaad.com%2F&psig=AOvVaw00Q42seOe4OHNyIy0OO1kx&ust=1524442105137477",
+    "res" : "https://onlinelibrary.wiley.com/doi/full/10.1002/da.22124",
+    "descriptions" : [
+      "A study was conducted at a mood and anxiety clinic in Connecticut about whether or not mindfulness reduced self reported rumination. With 128 participants, it was found that mindfulness may reduce the amount and frequency of rumination that participants experience in their day to day lives. Though this may be different for a less of an “at risk” test population, it is still expected that mindfulness operates through distinct and common mechanisms, depending on the context of the practitioner."
     ]
   }
 ]

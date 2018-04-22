@@ -1,5 +1,5 @@
 <template>
-    <v-parallax src="src/images/mountain2.jpg" height="800">
+    <v-parallax src="src/images/mountain2.jpg" height="150%">
         <div class="title">
             <h1>About This Project</h1>
         </div>
@@ -39,5 +39,6 @@
     }
     .paragraphs{
         font-size : 2.0em;
+        line-height : 2;
     }
 </style>
